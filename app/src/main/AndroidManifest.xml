@@ -16,6 +16,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".Views.RegisterScreen.RegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".Views.HomeScreen.HomeActivity"
             android:exported="false" />
         <activity
