@@ -16,7 +16,6 @@ import java.util.List;
 
 import poly.manhnt.md9_datn_fmodel.R;
 
-
 public class NoiBatAdapter extends RecyclerView.Adapter<NoiBatAdapter.ViewHolder> {
     Context context;
     List<String> stringList;
