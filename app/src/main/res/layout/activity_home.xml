@@ -115,14 +115,4 @@
         </FrameLayout>
     </FrameLayout>
 
-    <ExpandableListView
-        android:id="@+id/epMenu"
-        android:fitsSystemWindows="true"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:background="@color/white"
-        android:choiceMode="singleChoice"
-        android:groupIndicator="@null"/>
-
 </androidx.drawerlayout.widget.DrawerLayout>
