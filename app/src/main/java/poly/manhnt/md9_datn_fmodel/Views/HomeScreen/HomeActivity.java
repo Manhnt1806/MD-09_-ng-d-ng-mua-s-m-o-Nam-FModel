@@ -138,5 +138,6 @@ public class HomeActivity extends AppCompatActivity {
                 startAutoScroll();
             }
         }, 3000);
+
     }
 }

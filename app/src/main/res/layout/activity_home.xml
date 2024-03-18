@@ -6,6 +6,7 @@
     android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:background="@color/gray"
     >
     <FrameLayout
@@ -126,3 +127,13 @@
         android:groupIndicator="@null"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>
+
+    tools:context=".Views.HomeScreen.HomeActivity">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerNoiBat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="6dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

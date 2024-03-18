@@ -1,5 +1,6 @@
 package poly.manhnt.md9_datn_fmodel.Adapters;
 
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -49,4 +50,3 @@ public class NoiBatAdapter extends RecyclerView.Adapter<NoiBatAdapter.ViewHolder
         return stringList.size();
     }
 }
-
