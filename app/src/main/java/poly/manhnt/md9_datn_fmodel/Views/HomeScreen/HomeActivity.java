@@ -9,10 +9,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
+import android.widget.Button;
+import android.widget.ExpandableListView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.view.menu.MenuView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.widget.NestedScrollView;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -38,6 +41,7 @@ public class HomeActivity extends AppCompatActivity {
     ViewPagerAdapter viewPagerAdapter;
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle drawerToggle;
+    ExpandableListView expandableListView;
     NestedScrollView scrollView;
     RecyclerView recyclerView;
     NoiBatAdapter noiBatAdapter;
@@ -50,6 +54,7 @@ public class HomeActivity extends AppCompatActivity {
         tabLayout = findViewById(R.id.tabLayout);
         viewPager = findViewById(R.id.viewPager);
         drawerLayout = findViewById(R.id.drawerLayout);
+        expandableListView = findViewById(R.id.epMenu);
         scrollView = findViewById(R.id.nestedScrollHome);
         recyclerView = findViewById(R.id.recyclerNoiBat);
 
@@ -64,6 +69,10 @@ public class HomeActivity extends AppCompatActivity {
         recyclerView.setAdapter(noiBatAdapter);
         noiBatAdapter.notifyDataSetChanged();
 
+        drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
+        drawerToggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.blue1));
+        drawerLayout.addDrawerListener(drawerToggle);
+        toolbar.setTitle("");
         setSupportActionBar(toolbar);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
