@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 import poly.manhnt.md9_datn_fmodel.R;
+import poly.manhnt.md9_datn_fmodel.Views.CartScreen.CartActivity;
 import poly.manhnt.md9_datn_fmodel.Views.HomeScreen.HomeActivity;
 import poly.manhnt.md9_datn_fmodel.Views.LoginScreen.LoginActivity;
 import poly.manhnt.md9_datn_fmodel.Views.RegisterScreen.RegisterActivity;
@@ -25,7 +26,7 @@ public class PlashAcivity extends AppCompatActivity {
                 }catch (Exception e){
 
                 }finally {
-                    Intent intent = new Intent(PlashAcivity.this, HomeActivity.class);
+                    Intent intent = new Intent(PlashAcivity.this, CartActivity.class);
                     startActivity(intent);
                 }
             }
