@@ -24,7 +24,7 @@ public class PlashAcivity extends AppCompatActivity {
                 }catch (Exception e){
 
                 }finally {
-                    Intent intent = new Intent(PlashAcivity.this, RegisterActivity.class);
+                    Intent intent = new Intent(PlashAcivity.this, HomeActivity.class);
                     startActivity(intent);
                 }
             }
