@@ -16,6 +16,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".Views.NotifiScreen.NotifiActivity"
+            android:exported="false" />
+        <activity
             android:name=".Views.DetailScreen.DetailActivity"
             android:exported="false" />
         <activity
