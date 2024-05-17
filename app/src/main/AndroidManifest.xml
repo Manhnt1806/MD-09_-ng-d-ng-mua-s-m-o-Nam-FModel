@@ -19,6 +19,9 @@
 
             android:name=".Views.NotifiScreen.NotifiActivity"
 
+            android:exported="false" />
+        <activity
+
             android:name=".Views.AcountScreen.AcountActivity"
 
             android:exported="false" />
