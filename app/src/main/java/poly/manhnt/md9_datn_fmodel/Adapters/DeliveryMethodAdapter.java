@@ -1,4 +1,5 @@
-package poly.manhnt.md9_datn_fmodel.Adapters;
+
+
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-import poly.manhnt.datn_md09.Models.DeliveryMethod.DeliveryMethod;
+
 import poly.manhnt.datn_md09.databinding.ItemDeliveryMethodBinding;
 
 public class DeliveryMethodAdapter extends RecyclerView.Adapter<DeliveryMethodAdapter.ViewHolder> {
